@@ -1,55 +1,31 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Clicker Game</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background-color: #f0f0f0;
-      margin: 0;
-      padding: 0;
-    }
-    h1 {
-      color: #333;
-      margin-top: 50px;
-    }
-    #click-button {
-      padding: 20px 40px;
-      font-size: 24px;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      margin-top: 20px;
-    }
-    #click-button:hover {
-      background-color: #45a049;
-    }
-    #score {
-      font-size: 36px;
-      margin-top: 20px;
-      color: #333;
-    }
-  </style>
-</head>
-<body>
-  <h1>Clicker Game</h1>
-  <p>Click the button to increase your score!</p>
-  <button id="click-button">Click Me!</button>
-  <p>Score: <span id="score">0</span></p>
-
-  <script>
-    let score = 0;
-    const scoreElement = document.getElementById('score');
-    const clickButton = document.getElementById('click-button');
-
-    // Function to increase score
-    clickButton.addEventListener('click', () => {
-      score++;
-      scoreElement.textContent = score;
-    });
-  </script>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Bank Account - City National Bank</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 20px;
+        background-color: #f4f4f4;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to City National Bank</h1>
+      <p>Open your bank account today!</p>
+    </div>
+  </body>
 </html>
